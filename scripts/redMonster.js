@@ -29,11 +29,11 @@ class Background {
 
     constructor() {
         this.container = new PIXI.Container();
-        this.backGround = new PIXI.Sprite(PIXI.Texture.fromImage("../images/Location_assets/magic_forest_bg.jpg"));
-        this.magic_forest_win_up_to_100 = new PIXI.Sprite(PIXI.Texture.fromImage("../images/Location_assets/magic_forest_win_up_to_100.png"));
-        this.magic_forest_winner_frame = new PIXI.Sprite(PIXI.Texture.fromImage("../images/Location_assets/magic_forest_winner_frame.png"));
-        this.magic_forest_frame_for_text = new PIXI.Sprite(PIXI.Texture.fromImage("../images/Location_assets/magic_forest_frame_for_text.png"));
-        this.magic_forest_scratch_frame_big = new PIXI.Sprite(PIXI.Texture.fromImage('../images/Location_assets/magic_forest_scratch_frame_big.png'));
+        this.backGround = new PIXI.Sprite(PIXI.Texture.fromImage("images/Location_assets/magic_forest_bg.jpg"));
+        this.magic_forest_win_up_to_100 = new PIXI.Sprite(PIXI.Texture.fromImage("images/Location_assets/magic_forest_win_up_to_100.png"));
+        this.magic_forest_winner_frame = new PIXI.Sprite(PIXI.Texture.fromImage("images/Location_assets/magic_forest_winner_frame.png"));
+        this.magic_forest_frame_for_text = new PIXI.Sprite(PIXI.Texture.fromImage("images/Location_assets/magic_forest_frame_for_text.png"));
+        this.magic_forest_scratch_frame_big = new PIXI.Sprite(PIXI.Texture.fromImage('images/Location_assets/magic_forest_scratch_frame_big.png'));
         this.desxriptionGroup = new PIXI.Container();
     }
 
@@ -84,7 +84,7 @@ class Background {
         this.container.addChild(this.backGround, this.magic_forest_win_up_to_100, this.magic_forest_winner_frame,
             this.magic_forest_frame_for_text, this.magic_forest_scratch_frame_big, this.desxriptionGroup);
 
-        this.hideLayerTexture = PIXI.Texture.fromImage("../images/Location_assets/magic_forest_scratch_frame.png");
+        this.hideLayerTexture = PIXI.Texture.fromImage("images/Location_assets/magic_forest_scratch_frame.png");
         fieldsPosition.forEach((pos, i) => {
             let hideLayer = new PIXI.Sprite(this.hideLayerTexture);
             hideLayer.name = 'hideLayer' + i;
@@ -222,7 +222,7 @@ class Frame {
                 }
             }
 
-            let magic_forest_frame = PIXI.Texture.fromImage("../images/Location_assets/magic_forest_frame.png");
+            let magic_forest_frame = PIXI.Texture.fromImage("images/Location_assets/magic_forest_frame.png");
 
             symbolList.forEach((id, i) => {
                 let filedBG = new PIXI.Sprite(magic_forest_frame);
@@ -305,7 +305,7 @@ class Frame {
         }
 
         function bonusFrame() {
-            let magic_forest_winner_frame = new PIXI.Sprite(PIXI.Texture.fromImage("../images/Location_assets/magic_forest_winner_frame.png"));
+            let magic_forest_winner_frame = new PIXI.Sprite(PIXI.Texture.fromImage("images/Location_assets/magic_forest_winner_frame.png"));
             magic_forest_winner_frame.name = 'bonusBG';
             magic_forest_winner_frame.position.set(528, 140);
 
@@ -470,12 +470,12 @@ class StartGame {
         finishBarGroup.position.set(47, 220);
         app.stage.addChild(finishBarGroup);
 
-        let startBarBG = new PIXI.Sprite(PIXI.Texture.fromImage('../images/Location_assets/magic_forest_frame2.png'));
+        let startBarBG = new PIXI.Sprite(PIXI.Texture.fromImage('images/Location_assets/magic_forest_frame2.png'));
         startBarBG.name = 'startBarBG';
         startBarBG.position.set(0, 0);
         startBarGroup.addChild(startBarBG);
 
-        let startButton = new PIXI.Sprite(PIXI.Texture.fromImage('../images/Location_assets/magic_forest_button.png'));
+        let startButton = new PIXI.Sprite(PIXI.Texture.fromImage('images/Location_assets/magic_forest_button.png'));
         startButton.name = 'startButton';
         startButton.position.set(27, 191);
         startButton.interactive = true;
@@ -518,7 +518,7 @@ class StartGame {
         startButtonText.position.set(371, 238);
         startBarGroup.addChild(startButtonText);
 
-        let helpIcon = new PIXI.Sprite(PIXI.Texture.fromImage('../images/Location_assets/magic_forest_question_icon.png'));
+        let helpIcon = new PIXI.Sprite(PIXI.Texture.fromImage('images/Location_assets/magic_forest_question_icon.png'));
         helpIcon.name = 'helpIcon';
         helpIcon.position.set(330, 63);
         helpIcon.interactive = true;
@@ -529,7 +529,7 @@ class StartGame {
             helpIcon.interactive = false;
             startAnimation = performance.now();
             app.stage.children[1].destroy();
-            let text_px = new PIXI.Sprite(PIXI.Texture.fromImage('../images/Location_assets/text_px.png'));
+            let text_px = new PIXI.Sprite(PIXI.Texture.fromImage('images/Location_assets/text_px.png'));
             text_px.name = 'text_px';
             text_px.position.set(0, 120);
             text_px.x += -80;
@@ -540,7 +540,7 @@ class StartGame {
         }
         startBarGroup.addChild(helpIcon);
 
-        let coinIcon = new PIXI.Sprite(PIXI.Texture.fromImage('../images/Location_assets/magic_forest_coin_icon_small.png'));
+        let coinIcon = new PIXI.Sprite(PIXI.Texture.fromImage('images/Location_assets/magic_forest_coin_icon_small.png'));
         coinIcon.name = 'coinIcon';
         coinIcon.scale.set(0.85);
         coinIcon.position.set(726, 253);
@@ -552,7 +552,7 @@ class StartGame {
             fill: "#f45b4e"
         });
 
-        let finishBarBG = new PIXI.Sprite(PIXI.Texture.fromImage('../images/Location_assets/magic_forest_frame1.png'));
+        let finishBarBG = new PIXI.Sprite(PIXI.Texture.fromImage('images/Location_assets/magic_forest_frame1.png'));
         finishBarBG.name = 'finishBarBG';
         finishBarBG.position.set(0, 0);
         finishBarGroup.addChild(finishBarBG);
@@ -567,7 +567,7 @@ class StartGame {
         this.coinWinText.anchor.set(1, 0);
         finishBarGroup.addChild(this.coinWinText);
 
-        let winCoinIcon = new PIXI.Sprite(PIXI.Texture.fromImage('../images/Location_assets/magic_forest_coin_icon_big.png'));
+        let winCoinIcon = new PIXI.Sprite(PIXI.Texture.fromImage('images/Location_assets/magic_forest_coin_icon_big.png'));
         winCoinIcon.name = 'winCoinIcon';
         winCoinIcon.position.set(570, 160);
         finishBarGroup.addChild(winCoinIcon);
