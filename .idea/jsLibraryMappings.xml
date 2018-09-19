@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@types/es-feature-detection, @types/es6-collections, @types/es6-promisify, @types/es6-shim}" />
+  </component>
+</project>

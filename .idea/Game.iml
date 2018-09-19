@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/es-feature-detection" level="application" />
+    <orderEntry type="library" name="@types/es6-collections" level="application" />
+    <orderEntry type="library" name="@types/es6-promisify" level="application" />
+    <orderEntry type="library" name="@types/es6-shim" level="application" />
+  </component>
+</module>
