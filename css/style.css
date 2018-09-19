@@ -15,5 +15,5 @@ canvas {
 }
 @font-face {
     font-family: "DRAguSansBlack";
-    src: url("../fonts/DRAguSans-Black.ttf") format('woff');
+    src: url("fonts/DRAguSans-Black.ttf") format('woff');
 }
