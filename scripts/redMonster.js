@@ -485,6 +485,7 @@ class StartGame {
         startButton.on('touchend', pointerUp);
         startButton.on('mouseup', pointerUp);
         function pointerUp(event) {
+            darkness = new PIXI.Graphics();
             startButton.interactive = false;
             startAnimation = performance.now();
             requestAnimationFrame(startGameAnimation);
@@ -585,6 +586,6 @@ class StartGame {
         requestAnimationFrame(finishGameAnimation);
         winCoin = 25;
         isWin = false;
-        mask = null;
+        mask = null;        
     }
 }
