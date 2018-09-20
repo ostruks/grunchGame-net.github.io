@@ -279,7 +279,7 @@ class Frame {
                         graphics.destroy();
 
                         if (isWinSymbol)
-                            changeAnimation('red_happy_card');
+                            changeAnimation('red_happy_bonus');
                         else
                             changeAnimation('red_disappointed');
                         if (openCount == 7) start.finish();
@@ -349,7 +349,7 @@ class Frame {
                     drag = false;
                     gameGroup.addChild(magic_forest_winner_frame, symbol)
                     graphics.destroy();
-                    changeAnimation('red_happy_bonus');
+                    changeAnimation('red_happy_card');
                     if (openCount == 7) start.finish();
                     console.log(openCount);
                     openCount++;
